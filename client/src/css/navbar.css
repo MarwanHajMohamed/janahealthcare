@@ -1,0 +1,46 @@
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    box-shadow: 0 1px 2px 1px gray;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.navbar-list {
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-list button {
+    font-size: 1rem;
+    padding: 15px 15px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    border-right: 2px solid lightgray;
+    transition: 100ms ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-list .contact button {
+    border: none;
+}
+
+.navbar-list button:hover {
+    color: var(--green);
+}

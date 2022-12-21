@@ -1,0 +1,193 @@
+.contact-container {
+    margin: 0 200px 50px;
+}
+
+.content {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 50px;
+    background-color: rgb(246, 246, 246);
+}
+
+/* .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container .submit {
+    width: 100px;
+    margin-bottom: 30px;
+    background-color: var(--blue);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.form-container .submit:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+.form {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.form-one {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-two {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-other {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.form .dropdown-container .dropdownBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid ;
+    margin-left: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.menu {
+    z-index: 2;
+}
+
+.form .dropdownBtn:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+.form input {
+    margin-top: 8px;
+    padding: 3px;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container .dropdown-wrapper {
+    display: flex;
+    border: 1px solid;
+}
+
+.dropdown-container label {
+    padding: 5px;
+    min-width: 150px;
+}
+
+.quill {
+    height: 80%;
+}
+  
+.menu {
+    position: absolute;
+
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+
+    border: 1px solid grey;
+    width: 160px;
+}
+
+.menu > li {
+    margin: 0;
+
+    background-color: white;
+}
+
+.menu > li:hover {
+    background-color: lightgray;
+}
+
+.menu > li > button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.form-other .ql-container {
+    height: 100%;
+} */
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px black;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+
+.call-title,
+.email-title {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.phone-number,
+.email-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-wrapper,
+.email-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.phone-number i,
+.email-details i {
+    font-size: 20px;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: white;
+}
