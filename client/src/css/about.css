@@ -8,8 +8,7 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    width: 300px;
-    margin: auto auto 20px;
+    margin: auto 200px;
     text-align: center;
     color: black;
     padding: 20px 0 10px;
@@ -93,5 +92,30 @@
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1150px) {
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 20px;
+    }
+
+    .img-container img {
+        width: 300px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .blobs-container {
+        justify-content: center;
+    }
+
+    .description-wrapper {
+        margin: 0;
     }
 }

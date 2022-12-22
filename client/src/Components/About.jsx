@@ -8,8 +8,7 @@ export default function About() {
       <div className="about-title">About</div>
       <div className="about-wrapper">
         <div className="img-container">
-
-        <img src={Khaled2} alt="" />
+          <img src={Khaled2} alt="" />
         </div>
         
         <div className="description-wrapper">

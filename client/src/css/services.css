@@ -37,7 +37,7 @@
     min-width: 300px;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1290px) {
     .service-container {
         flex-direction: column;
         gap: 20px;
@@ -58,8 +58,16 @@
     }
 }
 
+@media (max-width: 920px) {
+    .service-container .title {
+        font-size: 2.4rem;
+    }
+}
+
 @media (max-width: 720px) {
-    /* .service-container .cd-image-container {
-        width: ;
-    } */
+    .service-container .cd-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

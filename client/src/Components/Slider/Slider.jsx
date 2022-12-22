@@ -66,23 +66,26 @@ function Slider({ original, modified, delay = 0 }) {
   }
 
   return (
-    <figure onMouseMove={containerOnMouseMove}
-      onClick={onDragStop}
-      className={`cd-image-container ${isVisible && 'is-visible'}`}
-      ref={container}>
-      <Image {...original} />
+    <div className="cd-wrapper">
 
-      <div style={{ width: sizes.resizableImageWidth }}
-        className={`cd-resize-img ${isDragStarted && 'resizable'}`}>
-        <Image {...modified} />
-      </div>
-
-      <Handle isDragStarted={isDragStarted}
-        onDragStart={onDragStart}
-        onDragStop={onDragStop}
-        positionLeft={sizes.resizableImageWidth}
-        elementRefference={dragElement} />
+      <figure onMouseMove={containerOnMouseMove} onTouchMove={containerOnMouseMove}
+        onClick={onDragStop}
+        className={`cd-image-container ${isVisible && 'is-visible'}`}
+        ref={container}>
+        <Image {...original} />
+  
+        <div style={{ width: sizes.resizableImageWidth }}
+          className={`cd-resize-img ${isDragStarted && 'resizable'}`}>
+          <Image {...modified} />
+        </div>
+  
+        <Handle isDragStarted={isDragStarted}
+          onDragStart={onDragStart}
+          onDragStop={onDragStop}
+          positionLeft={sizes.resizableImageWidth}
+          elementRefference={dragElement} />
     </figure>
+    </div>
   );
 }
 
