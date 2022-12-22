@@ -8,7 +8,7 @@ import JHC from '../css/images/JHC.png'
 export default function pageIntro() {
   return (
     <>
-      <div className='pageIntro-container'>
+      <div className='pageIntro-container' id='home'>
         <div className="logo-intro">
           <div className="letters">
             <img className='letter j' src={j} alt="J" />

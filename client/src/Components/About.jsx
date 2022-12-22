@@ -4,7 +4,7 @@ import Khaled2 from '../css/images/Khaled2.png'
 
 export default function About() {
   return (
-    <div className='about-container'>
+    <div className='about-container' id='about'>
       <div className="about-title">About</div>
       <div className="about-wrapper">
         <div className="img-container">
