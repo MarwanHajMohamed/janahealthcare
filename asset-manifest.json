@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/janahealthcare/static/css/main.18aea79d.css",
+    "main.js": "/janahealthcare/static/js/main.e64db970.js",
+    "static/media/DermalFiller.png": "/janahealthcare/static/media/DermalFiller.b4481019c15770d024fc.png",
+    "static/media/HairTreatmentBefore.png": "/janahealthcare/static/media/HairTreatmentBefore.e1ea3423bf21060eb8d5.png",
+    "static/media/HairTreatmentAfter.png": "/janahealthcare/static/media/HairTreatmentAfter.17b425d73a9584cd834e.png",
+    "static/media/DermalFiller1.png": "/janahealthcare/static/media/DermalFiller1.0064ced99bae37a9412f.png",
+    "static/media/WrinkleTreatmentBefore.png": "/janahealthcare/static/media/WrinkleTreatmentBefore.731413eaebc241dd4608.png",
+    "static/media/AcneTreatmentBefore.png": "/janahealthcare/static/media/AcneTreatmentBefore.456f6879ec02f1aa825b.png",
+    "static/media/WrinkleTreatmentAfter.png": "/janahealthcare/static/media/WrinkleTreatmentAfter.35f42ab294b3cbdad7d0.png",
+    "static/media/AcneTreatmentAfter.png": "/janahealthcare/static/media/AcneTreatmentAfter.79fce43a343c41600768.png",
+    "static/media/Khaled2.png": "/janahealthcare/static/media/Khaled2.e9b20d7e80695bc9b680.png",
+    "index.html": "/janahealthcare/index.html",
+    "static/media/cd-arrows.svg": "/janahealthcare/static/media/cd-arrows.46e1ced4cdd5e02baf2f.svg",
+    "main.18aea79d.css.map": "/janahealthcare/static/css/main.18aea79d.css.map",
+    "main.e64db970.js.map": "/janahealthcare/static/js/main.e64db970.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18aea79d.css",
+    "static/js/main.e64db970.js"
+  ]
+}
