@@ -9,5 +9,8 @@
     "react-datepicker": "^4.8.0",
     "react-froala-wysiwyg": "^4.0.15",
     "react-scroll": "^1.8.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
