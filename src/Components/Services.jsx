@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import '../css/services.css'
 
 import DermalFiller1 from '../css/images/DermalFiller.png'
@@ -15,52 +15,18 @@ import HairTreatment2 from '../css/images/HairTreatmentAfter.png'
 
 import Slider from './Slider/Slider'
 
-export default function Services() {
+import {
+  ReactCompareSlider,
+  ReactCompareSliderHandle,
+  ReactCompareSliderImage
+} from "react-compare-slider";
 
-  const sliderDermalFiller = {
-    original: {
-        url: DermalFiller2,
-        title: 'After'
-    },
-    modified: {
-        url: DermalFiller1,
-        title: 'Before'
-    }
-  };
+export default function Services({ style, ...props }) {
 
-  const sliderWrinkleTreatment = {
-    original: {
-        url: WrinkleTreatment2,
-        title: 'After'
-    },
-    modified: {
-        url: WrinkleTreatment1,
-        title: 'Before'
-    }
-  };
-
-  const sliderAcneTreatment = {
-    original: {
-        url: AcneTreatment2,
-        title: 'After'
-    },
-    modified: {
-        url: AcneTreatment1,
-        title: 'Before'
-    }
-  };
-
-  const sliderHairTreatment = {
-    original: {
-        url: HairTreatment2,
-        title: 'After'
-    },
-    modified: {
-        url: HairTreatment1,
-        title: 'Before'
-    }
-  };
-
+  const handlePositionChange = useCallback(
+    (position) => console.log("[Portrait]", position),
+    []
+  );
   return (
     <div className='services-wrapper' id='services'>
       <div className="services-title">Services</div>
@@ -73,13 +39,77 @@ export default function Services() {
             quidem eum vero enim quasi.
           </div> */}
         </div>
-        
-        <Slider {...sliderDermalFiller}/>
+        <ReactCompareSlider
+          {...props}
+          handle={
+            <ReactCompareSliderHandle
+              buttonStyle={{
+                border: 0,
+              }}
+            />
+          }
+
+          itemOne={
+            <ReactCompareSliderImage
+              src={DermalFiller1}
+              alt="one"
+            />
+          }
+
+          itemTwo={
+            <ReactCompareSliderImage
+              src={DermalFiller2}
+              alt="two"
+            />
+          }
+
+          onPositionChange={handlePositionChange}
+
+          style={{
+            display: "flex",
+            width: "100%",
+            "border-radius": "15px",
+            "box-shadow": "0px 0px 0px 3px white, 0px 0px 0px 5px black",
+            ...style
+          }}
+        />
       </div>
       
       <div className="service-container">
-        
-        <Slider {...sliderWrinkleTreatment}/>
+        <ReactCompareSlider
+          {...props}
+          handle={
+            <ReactCompareSliderHandle
+              buttonStyle={{
+                border: 0,
+              }}
+            />
+          }
+
+          itemOne={
+            <ReactCompareSliderImage
+              src={WrinkleTreatment1}
+              alt="one"
+            />
+          }
+
+          itemTwo={
+            <ReactCompareSliderImage
+              src={WrinkleTreatment2}
+              alt="two"
+            />
+          }
+
+          onPositionChange={handlePositionChange}
+
+          style={{
+            display: "flex",
+            width: "100%",
+            "border-radius": "15px",
+            "box-shadow": "0px 0px 0px 3px white, 0px 0px 0px 5px black",
+            ...style
+          }}
+        />
         <div className="description-container wrinkleTreatment">
           <div className="title wrinkleTreatment">Wrinkle<span>Treatment</span></div>
           {/* <div className="description">
@@ -91,7 +121,6 @@ export default function Services() {
       </div>
 
       <div className="service-container">
-        
         <div className="description-container acneTreatment">
           <div className="title acneTreatment"><span>Acne</span>Treatment</div>
           {/* <div className="description">
@@ -100,12 +129,77 @@ export default function Services() {
             quidem eum vero enim quasi.
           </div> */}
         </div>
-        <Slider {...sliderAcneTreatment}/>
+        <ReactCompareSlider
+          {...props}
+          handle={
+            <ReactCompareSliderHandle
+              buttonStyle={{
+                border: 0,
+              }}
+            />
+          }
+
+          itemOne={
+            <ReactCompareSliderImage
+              src={AcneTreatment1}
+              alt="one"
+            />
+          }
+
+          itemTwo={
+            <ReactCompareSliderImage
+              src={AcneTreatment2}
+              alt="two"
+            />
+          }
+
+          onPositionChange={handlePositionChange}
+
+          style={{
+            display: "flex",
+            width: "100%",
+            "border-radius": "15px",
+            "box-shadow": "0px 0px 0px 3px white, 0px 0px 0px 5px black",
+            ...style
+          }}
+        />
       </div>
 
       <div className="service-container">
-        
-        <Slider {...sliderHairTreatment}/>
+        <ReactCompareSlider
+          {...props}
+          handle={
+            <ReactCompareSliderHandle
+              buttonStyle={{
+                border: 0,
+              }}
+            />
+          }
+
+          itemOne={
+            <ReactCompareSliderImage
+              src={HairTreatment1}
+              alt="one"
+            />
+          }
+
+          itemTwo={
+            <ReactCompareSliderImage
+              src={HairTreatment2}
+              alt="two"
+            />
+          }
+
+          onPositionChange={handlePositionChange}
+
+          style={{
+            display: "flex",
+            width: "100%",
+            "border-radius": "15px",
+            "box-shadow": "0px 0px 0px 3px white, 0px 0px 0px 5px black",
+            ...style
+          }}
+        />
         <div className="description-container hairTreatment">
           <div className="title hairTreatment">Hair<span>Treatment</span></div>
           {/* <div className="description">
