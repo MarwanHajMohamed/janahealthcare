@@ -1,0 +1,76 @@
+.services-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.services-page-container .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.service-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.service-button {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: 100ms ease-in-out;
+}
+
+.service-button.show {
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(20, 20, 98);
+  border-bottom: 0;
+}
+
+.service-button:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.service-button:first-child {
+  border-radius: 10px 0 0 0px;
+}
+
+.service-button:last-child {
+  border-radius: 0 10px 0px 0;
+}
+
+.service-show-container {
+  min-height: 350px;
+}
+
+.service-show-container .service {
+  display: flex;
+  gap: 50px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+  padding: 50px;
+  border-radius: 15px;
+  background-color: rgb(241, 241, 241);
+}
+
+.service-show-container .service .description-container .title {
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--title);
+  margin-bottom: 10px;
+}
+
+.service-show-container .service .description {
+  width: 500px;
+  margin: auto;
+  text-align: left;
+}

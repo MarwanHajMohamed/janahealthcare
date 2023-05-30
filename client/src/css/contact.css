@@ -1,0 +1,87 @@
+.contact-container {
+  margin: 20px 100px 50px;
+}
+
+.content {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 50px 50px 20px;
+  background-color: rgb(246, 246, 246);
+  margin-top: 10px;
+}
+
+.contact-container form .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-container form .form-container .form {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-container form .form-container .form input,
+.contact-container form .form-container #dropdown {
+  width: 200px;
+}
+
+.contact-container .submit {
+  display: flex;
+  background-color: var(--green);
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+  padding: 10px 60px;
+  border-radius: 5px;
+  color: white;
+  transition: 100ms ease-in-out;
+  margin: 20px auto;
+  border: 0;
+}
+
+.contact-container .submit:hover {
+  background-color: white;
+  color: var(--green);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.quill {
+  height: 80%;
+}
+
+.form-other .ql-container {
+  height: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.4);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+@media (max-width: 1200px) {
+  .contact-container {
+    margin: 20px;
+  }
+}
