@@ -245,12 +245,12 @@ export default function Navbar() {
                 </Link>
               </button>
             </li>
-            <li className="register">
+            {/* <li className="register">
               <button onClick={handleOpenRegister}>Register</button>
             </li>
             <li className="login">
               <button onClick={handleOpenLogin}>Login</button>
-            </li>
+            </li> */}
           </div>
         </div>
         <div className="navbar-list-phone">
@@ -300,12 +300,12 @@ export default function Navbar() {
                 </Link>
               </button>
             </li>
-            <li className="login">
+            {/* <li className="login">
               <button>Login</button>
             </li>
             <li className="register">
               <button>Register</button>
-            </li>
+            </li> */}
           </div>
         </div>
       </div>

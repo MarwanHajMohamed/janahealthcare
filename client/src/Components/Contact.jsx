@@ -125,7 +125,7 @@ export default function Contact() {
     <div className="contact-container" id="contact">
       <div className="contact-title">Get in Touch</div>
       <div className="content">
-        <form onSubmit={book}>
+        {/* <form onSubmit={book}>
           <div className="form-container">
             <div className="form">
               <TextField
@@ -218,7 +218,7 @@ export default function Contact() {
           <button type="submit" className="submit">
             Make a booking
           </button>
-        </form>
+        </form> */}
         <div className="map">
           <iframe
             title="iframe"

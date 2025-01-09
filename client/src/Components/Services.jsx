@@ -72,7 +72,7 @@ export default function NewServices({ style, ...props }) {
             onClick={() => {
               handleSliderImage(AcneTreatment1, AcneTreatment2);
               setOpen("acne");
-              setDescription(servicedescription[0].acne);
+              setDescription(servicedescription[2].acne);
             }}
           >
             <div>Acne Treatment</div>
@@ -84,7 +84,7 @@ export default function NewServices({ style, ...props }) {
             onClick={() => {
               handleSliderImage(HairTreatment1, HairTreatment2);
               setOpen("hair");
-              setDescription(servicedescription[0].hair);
+              setDescription(servicedescription[3].hair);
             }}
           >
             <div>Hair Treatment</div>

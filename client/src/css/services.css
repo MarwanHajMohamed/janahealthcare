@@ -50,16 +50,17 @@
 }
 
 .service-show-container {
-  min-height: 350px;
+  height: 350px;
 }
 
 .service-show-container .service {
   display: flex;
   gap: 50px;
-  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+  /* box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2); */
   padding: 50px;
   border-radius: 15px;
   background-color: rgb(241, 241, 241);
+  height: 200px;
 }
 
 .service-show-container .service .description-container .title {
